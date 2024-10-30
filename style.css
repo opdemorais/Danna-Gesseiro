@@ -1,0 +1,106 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0ac4c4de;
+    color: #6b0dcf;
+    text-align: center;
+}
+
+/* Header */
+header {
+    background-color:black;
+    color: white;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2em;
+}
+
+header p {
+    font-size: 1.2em;
+}
+
+/* Seção Sobre */
+#sobre {
+    padding: 20px;
+    margin-top: 10px;
+}
+
+#sobre h2 {
+    color: #5d7f92;
+    margin-bottom: 15px;
+}
+
+/* Cards de serviços */
+.card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+
+.card {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    padding: 15px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+    color: #5d7f92;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+/* Botão de WhatsApp */
+button {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #128C7E;
+}
+
+/* Footer */
+footer {
+    background-color: #5d7f92;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    font-size: 0.9em;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    header h1 {
+        font-size: 1.8em;
+    }
+}
